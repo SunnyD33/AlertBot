@@ -20,7 +20,8 @@ class Summon(commands.Cog):
     )
     async def summon(self, ctx, *usernames: str):
         """
-        usernames: List of usernames to track presence in the guild
+        Args:
+            usernames: List of usernames to track presence in the guild
         """
 
         timeout: float = 300.0  # Set the timeout to 5 minutes (300 seconds)

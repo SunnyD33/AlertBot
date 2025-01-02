@@ -30,10 +30,10 @@ class User:
             logging.info("-----------------")
             logging.info(f"Request URL: {response.url}")
             logging.info(f"Status Code: {response.status_code}")
-            logging.info(f"Response Headers: {response.headers}")
+            # logging.info(f"Response Headers: {response.headers}")
 
             json_data = json.loads(response.text)
-            print(json_data)
+            # print(json_data)
 
             if "global_name" in json_data:
                 if json_data["global_name"] is None:
@@ -65,10 +65,10 @@ class User:
             logging.info("-----------------")
             logging.info(f"Request URL: {response.url}")
             logging.info(f"Status Code: {response.status_code}")
-            logging.info(f"Response Headers: {response.headers}")
+            # logging.info(f"Response Headers: {response.headers}")
 
             json_data = json.loads(response.text)
-            print(json_data)
+            # print(json_data)
 
             return json_data["name"]
         except requests.exceptions.HTTPError as errh:
